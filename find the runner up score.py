@@ -19,7 +19,7 @@ arr=dup(arr) #to remove duplicates(.remove(max())) will only remove one value no
 
 
 
-arr.remove(max(arr))## return type of remove is none. it only removes so dont do arr= arr.remove(max(arr))
+arr.remove(max(arr))## return type of remove is none.
 
 print(max(arr))
 
@@ -40,8 +40,8 @@ for num in range(1,len(arr)):
 flag=False
 max_num2=arr[0]
 max_num=[]
-mc1=0
-mc2=1
+mc1=0 #max count 1
+mc2=1 #maxcount 2
 '''for num in range(1,len(arr)):    
     if arr[num] > max_num2:
         if arr[num] > max_num:
@@ -54,7 +54,7 @@ print(max_num2)'''
 
 for num in range(1, len(arr)):
     if arr[num]>max_num2:
-        if not flag:    #when max_num is empty
+        if not flag:    #when max_num is empty i.e for initializing
             max_num=arr[num]
             mc1=1 #to find out count of max num and max num 2
             flag=True   #now max_num is not empty
