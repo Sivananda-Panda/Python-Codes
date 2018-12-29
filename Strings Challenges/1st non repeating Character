@@ -1,0 +1,14 @@
+a = input("Enter the text here")
+
+c = {}
+
+for i in a:
+    if i in c:
+        c[i] = 2
+    else:
+        c[i] = 1
+
+for i in c:
+    if c[i] == 1:
+        print( i, " is the first non repeating character.")
+        break
